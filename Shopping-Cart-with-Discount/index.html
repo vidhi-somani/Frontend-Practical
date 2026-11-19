@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart with Discount</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart</h1>
+
+    <!-- Cart table (hidden when cart is empty) -->
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body"></tbody>
+    </table>
+
+    <!-- Message shown when cart is empty -->
+    <p id="empty-message" class="empty hidden">Your cart is empty.</p>
+
+    <!-- Bill summary -->
+    <div id="summary" class="summary">
+      <div class="row"><span>Subtotal</span><span id="subtotal">Rs. 0</span></div>
+      <div class="row"><span>Discount (10% on Rs. 1000 or more)</span><span id="discount">Rs. 0</span></div>
+      <div class="row final"><span>Final Payable Amount</span><span id="final">Rs. 0</span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

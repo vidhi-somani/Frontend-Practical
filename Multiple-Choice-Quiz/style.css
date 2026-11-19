@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  margin: 0;
+  padding: 30px 15px;
+  color: #222;
+}
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+h1 { text-align: center; margin-top: 0; }
+#counter { color: #555; font-weight: bold; }
+h2 { font-size: 20px; }
+
+.option {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.option:hover { background: #eef3fa; }
+.option input { margin-right: 10px; }
+
+button {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover:not(:disabled) { background: #1b2733; }
+button:disabled { background: #aab2bb; cursor: not-allowed; }
+
+#result-box { text-align: center; }
+#score-text { font-size: 28px; font-weight: bold; }
+#percent-text { font-size: 18px; }
+#feedback { font-size: 20px; font-weight: bold; color: #1e8449; }
+
+.hidden { display: none; }
